@@ -1,11 +1,13 @@
 body {
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 400px;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0;
 }
 
 header {
+    display: flex;
     grid-column-start: 1;
     grid-column-end: 3;
     background: linear-gradient(#4171B1, #3791BE);
@@ -13,7 +15,46 @@ header {
     padding: 15px;
 }
 
-div .botones {
+.botones button {
+    margin:  0px 40px;
+    background: rgb(43, 88, 146);
+    border-radius: 5px;
+    color: white;
+    padding: 8px 5px;
+    border: none;
+}
+
+.diseñador {
     display: flex;
-    margin: 0px, 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eduardo {
+    display: flex;
+}
+
+main {
+    display: block;
+    flex-direction: column;
+    background: linear-gradient(white, #C6E5FA);
+}
+
+main section {
+    height: 200px;
+    width: 750px;
+    border-radius: 10px;
+    background-color: rgb(158, 200, 224);
+    margin: 20px;
+    color: white;
+    border: 5px solid #4171B1;
+}
+
+footer {
+    display: inherit;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: linear-gradient(#4171B1, #3791BE);
+    color: white;
+    padding: 15px;
 }
