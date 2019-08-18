@@ -2,12 +2,13 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 400px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 160px 1fr 130px;
     margin: 0;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 3;
     background: linear-gradient(#4171B1, #3791BE);
@@ -15,8 +16,8 @@ header {
     padding: 15px;
 }
 
-.botones button {
-    margin:  0px 40px;
+button {
+    margin:  15px 40px;
     background: rgb(43, 88, 146);
     border-radius: 5px;
     color: white;
@@ -24,23 +25,35 @@ header {
     border: none;
 }
 
-.diseñador {
+h1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px 2px darkblue;
+    margin: 0;
+    float: right;
 }
 
-.eduardo {
+
+h2 {
     display: flex;
+    flex-direction: column;
 }
 
 main {
-    display: block;
+    display: flex;
     flex-direction: column;
     background: linear-gradient(white, #C6E5FA);
 }
 
-main section {
+aside {
+    border: 8px solid #4171B1;
+    background-color: rgb(158, 200, 224);
+}
+
+section {
     height: 200px;
     width: 750px;
     border-radius: 10px;
