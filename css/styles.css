@@ -7,6 +7,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 header {
     display: flex;
     flex-direction: column;
@@ -17,14 +18,13 @@ header {
     padding: 15px;
 }
 
-nav .link {
-    height: 50px;
-    width: 150px;
+nav a {
+    display: inline-block;
     margin:  15px 40px;
     background: rgb(43, 88, 146);
     border-radius: 5px;
     color: white;
-    padding: 8px 5px;
+    padding: 15px 10px;
     border: none;
     font-size: 16px;
 }
@@ -111,4 +111,44 @@ footer {
     background: linear-gradient(#4171B1, #3791BE);
     color: white;
     padding: 15px;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+    /* main section {
+        margin-left: 0px;
+    } */
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 650px;
+        border-radius: 10px;
+        background-color: rgb(158, 200, 224);
+        margin: 10px 0px;
+        color: white;
+        border: 5px solid #4171B1;
+        padding: 10px;
+    }
+    #contacto {
+        background-image: url("../imagenes/charlar_fondo-01.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    main img {
+        display: none;
+    }
+    
 }
