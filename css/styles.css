@@ -4,6 +4,7 @@ body {
     grid-template-columns: 1fr 400px;
     grid-template-rows: 160px 1fr 130px;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
@@ -17,12 +18,15 @@ header {
 }
 
 button {
+    height: 50px;
+    width: 150px;
     margin:  15px 40px;
     background: rgb(43, 88, 146);
     border-radius: 5px;
     color: white;
     padding: 8px 5px;
     border: none;
+    font-size: 16px;
 }
 
 h1 {
@@ -38,8 +42,11 @@ h1 {
 
 
 h2 {
+    font-size: 35px;
+    text-shadow: 2px 2px 2px darkblue;
     display: flex;
     flex-direction: column;
+    margin: 10px 10px 10px 40px;
 }
 
 main {
@@ -48,12 +55,44 @@ main {
     background: linear-gradient(white, #C6E5FA);
 }
 
+main img {
+    width: 110px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+}
+main h3 {
+    grid-column-start: 2;
+}
+main p {
+    grid-column-start: 2;
+}
+
+
 aside {
-    border: 8px solid #4171B1;
+    /* border: 8px solid #4171B1; */
     background-color: rgb(158, 200, 224);
+    padding: 10px;
+    /* margin: 20px 0px; */
+}
+aside img {
+    width: 364px;
+}
+
+aside p {
+    font-weight: bolder;
+    line-height: 30px;
+    text-align: center;
+}
+
+main section {
+    margin-left: 55px;
 }
 
 section {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 80%;
     height: 200px;
     width: 750px;
     border-radius: 10px;
@@ -61,6 +100,7 @@ section {
     margin: 20px;
     color: white;
     border: 5px solid #4171B1;
+    padding: 10px;
 }
 
 footer {
